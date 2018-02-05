@@ -1,0 +1,22 @@
+Ce dépôt contient des tests automatisés pour le tableur de Projet 2.
+
+Pour partager vos tests, mettez vos fichiers dans un répertoire à votre nom (ou
+celui de votre binôme) et indiquez dans ce fichier les instructions à suivre
+pour effectuer les tests.
+
+Si vous voulez tester votre programme, lancez le set de quelqu'un en suivant
+ses instructions.
+
+
+
+# michelland
+
+Les tests sont indépendants ; chaque test est réussi si et seulement si le
+script n'affiche que des 0.
+
+J'ai besoin de nombres négatifs pour ça. Vous pouvez les ajouter en modifiant
+un tout petit peu lexer.mll, en rajoutant '-'? (ie. "signe - optionnel") devant
+les expressions pour les constantes :
+
+	| '-'? ['0'-'9']+ '.' ['0'-'9']* as s { NBR (float_of_string s) }
+	| '-'? ['0'-'9']+ as s { INT (int_of_string s) }
