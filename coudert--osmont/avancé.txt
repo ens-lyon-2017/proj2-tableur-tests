@@ -1,0 +1,12 @@
+A3=MULT(A1;A2)
+SwitchTo s2
+C1=6
+C2=7
+B1=s1(C1;C2)
+Show B1
+
+A3=SUM(B1;A1)
+SwitchTo s1
+D1=s2(0;1)
+A3=MULT(D1;SUM(2;4))
+Show A3
