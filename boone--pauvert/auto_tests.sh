@@ -7,7 +7,7 @@ sol_dir="solutions/"
 make
 
 
-echo "\n **************** Starting Tests *****************"
+echo -e "\n **************** Starting Tests *****************"
 for test in $(ls $tests_dir)
 do
 	printf "Testing %-10s : %10s" $test
@@ -18,12 +18,12 @@ do
 		solution=$(cat $sol_dir/$test)
 		if [ "-"$solution = "-"$res ]
 		then
-			echo "\t\t--Right Answer"
+			echo -e "\t\t--Right Answer"
 		else
-			echo -n "\t\t--Wrong Answer"
+			echo -ne "\t\t--Wrong Answer"
 			printf " - should be \"%s\"\n" $solution
 		fi
 	else
-		echo "\t\tERROR : $sol_dir/$test"
+		echo -e "\t\tERROR : $sol_dir/$test"
 	fi
 done;
