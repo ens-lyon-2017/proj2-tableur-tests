@@ -28,3 +28,29 @@ Les test sont associés à leurs fichiers réponses.
 Lorsqu'un cycle est crée une ligne de la forme
 PAF :  <INSTRUCTION>  skipped
 est écrite
+
+# boone--pauvert
+
+Les tests sont indépendants.
+Testing AVG.txt    : 	Teste AVERAGE
+Testing colon.txt  :    Teste l'implémentation de ':'
+Testing coord.txt  :    Teste l'extension de votre système de coordonnées à plusieurs lettres
+Testing cycle.txt  :    Vérifie que vous ignorez des commandes si elles sont cycliques - niveau 1 !
+Testing dep.txt    :    Test primaire de vos dépendances
+Testing flot2.txt  :    Vérifie que vous avez amélioré le parsing des flottants pour permettre plusieurs chiffres après la virgule
+Testing flot-neg.txt :  Idem, vérifie que vous pouvez faire des flottants négatifs
+Testing fun-parse.txt :   Vérifie que vos fonctions passent au parser
+Testing fun-sum.txt :     Vérifie que vous gérer les dépendances correctement lors des appels de fonction
+Testing MAX.txt    :      Teste MAX
+Testing MULT.txt   :      Teste MULT
+Testing nombre.txt :      Vérifie que vous pouvez effectivement parser de l'entier en INT et pas en FLOAT
+Testing SUM.txt    :      Teste SUM
+Testing switchTo.txt :    Vérifie le SwitchTo, et l'indépendance entre vos feuilles
+Testing t1.txt     :      un des tests vanilla
+Testing t2.txt     :      idem
+Testing t3.txt     :      cat tests/t3.txt pour comprendre ce que c'est (j'ai oublié)
+Testing update-ok.txt :   Vérifie que vous ignorez des commandes si elles sont cycliques - niveau 2 !
+
+Utilisez auto_tests.sh
+Les solutions sont dans le dossier solutions/
+
