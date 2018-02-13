@@ -12,7 +12,7 @@ ses instructions.
 # michelland
 
 Les tests sont indépendants ; chaque test est réussi si et seulement si le
-script n'affiche que des 0.
+script n'affiche que des 0 (ou des _).
 
 J'ai besoin de nombres négatifs pour ça. Vous pouvez les ajouter en modifiant
 un tout petit peu lexer.mll, en rajoutant '-'? (ie. "signe - optionnel") devant
